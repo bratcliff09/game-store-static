@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | GameStore</title>
+    <link rel="stylesheet" href="/css/product.css" />
+    <script type="module" src="/js/product.js"></script>
+  </head>
+  <body>
+    <my-header></my-header>
+    <main>
+      <div id="game-summary">
+        <aside>
+          <div id="carousel-main">
+            <ul>
+              <li class="skeleton"></li>
+              <!--
+              <li>
+                <img src="/public/product/nier_automata/1.webp" />
+              </li>
+              -->
+            </ul>
+          </div>
+          <div id="carousel-slider">
+            <button aria-label="carousel-back">
+              <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <ul aria-label="Carousel slide select">
+              <li class="skeleton"></li>
+              <!--
+              <li class="carousel-selected">
+                <button aria-label="Slide 1">
+                  <img src="/public/product/nier_automata/1.webp" />
+                </button>
+              </li>
+              -->
+            </ul>
+            <button aria-label="carousel-forward">
+              <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        </aside>
+        <section>
+          <h1 class="skeleton">Nier Automata: Game of the YorHA Edition</h1>
+          <fieldset>
+            <legend>Platform</legend>
+          </fieldset>
+          <div class="price skeleton">
+            <p class="final-price">$26.99</p>
+            <p class="discount">-50%</p>
+            <p class="original-price" aria-roledescription="Original Price">
+              $45.99
+            </p>
+          </div>
+
+          <a href="#" id="cta-btn" class="add-to-cart" role="button"
+            >Add To Cart</a
+          >
+        </section>
+      </div>
+      <div id="specifics">
+        <h2>Specifications</h2>
+        <div>
+          <div id="specifics-left">
+            <div>
+              <p>Developer</p>
+              <p class="skeleton">Dev Name</p>
+            </div>
+            <div>
+              <p>Publisher</p>
+              <p class="skeleton">Publisher Name</p>
+            </div>
+            <div>
+              <p>Release</p>
+              <p class="skeleton">Jan 22, 2026</p>
+            </div>
+          </div>
+          <div id="specifics-right">
+            <div id="esrb">
+              <div class="skeleton"></div>
+              <!--
+              <img src="/public/esrb/ESRB_E10.png" />
+              -->
+              <ul>
+                <li><p class="skeleton">Descriptor 1</p></li>
+                <li><p class="skeleton">Descriptor 2</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="game-description">
+        <h2>Description</h2>
+        <p class="skeleton">
+          Lorem ipsum dolor sit amet consectetur, Neque dolorem magni vero qui
+          totam!
+        </p>
+      </div>
+    </main>
+
+    <my-footer></my-footer>
+  </body>
+</html>

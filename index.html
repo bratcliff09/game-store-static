@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStore</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <script type="module" src="/js/home.js"></script>
+  </head>
+  <body>
+    <my-header></my-header>
+    <main>
+      <div id="hero-carousel">
+        <button
+          id="carousel-back"
+          class="carousel-btn"
+          aria-label="carousel-back"
+        >
+          <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <ul id="carousel-main" aria-label="Featured Products">
+          <li class="skeleton"></li>
+          <!--
+          <li class="carousel-slide">
+            <a href="#" class="carousel-part">
+              <div class="img-wrapper">
+                <img src="public/homeCarousel/re9.jpg" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="title">Resident Evil Requiem</p>
+                <p class="description">
+                  The 9th installment in this long-running horror franchise is
+                  finally here
+                </p>
+                <div class="part-bottom">
+                  <button>Pre-Order Now</button>
+                  <div
+                    class="price"
+                    role="link"
+                    aria-label="50% discount, Current Price: $45.99, Original price: $59.99"
+                  >
+                    <p class="final-price">$45</p>
+                    <div class="sale">
+                      <p>-50%</p>
+                      <p>$59.99</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          -->
+        </ul>
+        <button
+          id="carousel-forward"
+          class="carousel-btn"
+          aria-label="carousel-forward"
+        >
+          <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+        <ul id="carousel-slide-select">
+          <li>
+            <button aria-label="Slide 1 of 2"></button>
+          </li>
+        </ul>
+      </div>
+      <h2>Staff Pick's</h2>
+      <ul id="staff-picks">
+        <!--
+        <li class="product-listing">
+          <a href="/html/product.html?id=0">
+            <img src="/public/product/nier_automata/1.webp" />
+            <div class="product-info">
+              <p class="title">NieR:Automata</p>
+              <p class="price">$29.99</p>
+
+              <div class="sale">
+                <p>-25%</p>
+                <p>$39.99</p>
+              </div>
+            </div>
+          </a>
+        </li>
+        -->
+        <li class="skeleton"></li>
+      </ul>
+      <h2>Shop by Category</h2>
+      <ul id="shop-by-category">
+        <li>
+          <a href="/html/search.html">
+            <div><p>Video Games</p></div>
+            <img src="/public/home/categories/image2.webp" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div>
+              <p>Consoles</p>
+              <p>Coming Soon</p>
+            </div>
+            <img src="/public/home/categories/image1.webp" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div>
+              <p>Figurines</p>
+              <p>Coming Soon</p>
+            </div>
+            <img src="/public/home/categories/image3.webp" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <div>
+              <p>Books</p>
+              <p>Coming Soon</p>
+            </div>
+            <img src="/public/home/categories/image0.webp" />
+          </a>
+        </li>
+      </ul>
+    </main>
+    <my-footer></my-footer>
+  </body>
+</html>

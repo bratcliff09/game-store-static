@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search | GameStore</title>
+    <link rel="stylesheet" href="/css/search.css" />
+    <script type="module" src="/js/search.js"></script>
+  </head>
+  <body>
+    <my-header></my-header>
+
+    <div id="main-wrapper">
+      <div id="aside-wrapper">
+        <aside>
+          <h2>Filters</h2>
+          <form>
+            <input id="clear-filters-btn" type="button" value="Clear Filters" />
+            <fieldset id="platform-fieldset">
+              <legend>Platform</legend>
+              <ul>
+                <li>
+                  <label class="custom-checkbox"
+                    ><input type="checkbox" value="playstation" />
+                    <div>Playstation</div>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-checkbox"
+                    ><input type="checkbox" value="switch" />
+                    <div>Nintendo</div>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-checkbox"
+                    ><input type="checkbox" value="xbox" />
+                    <div>Xbox</div>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset id="rating-fieldset">
+              <legend>Age Rating</legend>
+              <ul>
+                <li>
+                  <label class="custom-checkbox"
+                    ><input type="checkbox" value="playstation" />
+                    <div>E</div>
+                  </label>
+                </li>
+                <li>
+                  <label class="custom-checkbox"
+                    ><input type="checkbox" value="playstation" />
+                    <div>E10</div>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset id="price-fieldset">
+              <legend>Price</legend>
+              <div>
+                <input type="number" placeholder="Min" min="0" />
+                <input type="number" placeholder="Max" min="0" />
+              </div>
+              <input id="form-submit-btn" type="submit" value="Set" />
+            </fieldset>
+          </form>
+        </aside>
+        <button id="mobile-filters-close">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <main>
+        <h2>
+          <span id="result-number"></span> Results for
+          <span id="result-query" class="skeleton">Nier Automata</span>
+        </h2>
+        <button id="mobile-filters-open">
+          <span class="material-symbols-outlined">filter_list</span>
+        </button>
+        <ul>
+          <li class="skeleton"></li>
+          <!--
+          <li class="product-listing">
+            <a href="">
+              <img src="/public/product/nier_automata/1.webp" />
+              <div class="product-info">
+                <p class="title">Nier Automata Game of the YorHA Edition</p>
+                <p class="price">$59.99</p>
+                <div class="sale">
+                  <p>-50%</p>
+                  <p>$59.99</p>
+                </div>
+                <p class="pre-order">Pre Order Now</p>
+              </div>
+            </a>
+          </li>
+          -->
+        </ul>
+      </main>
+    </div>
+
+    <my-footer></my-footer>
+  </body>
+</html>
