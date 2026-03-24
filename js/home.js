@@ -35,7 +35,7 @@ const carouselSlides = [
       "The 9th installment in this long-running horror franchise is finally here ",
     imgPath: "re9.webp", //Image name with in /public/home/heroCarousel/
     type: SLIDE_TYPE.PRODUCT_GAME,
-    link: "/html/product.html?id=14",
+    link: "./html/product.html?id=14",
     productID: 14,
   },
 
@@ -44,7 +44,7 @@ const carouselSlides = [
     description: "Now on sale!",
     imgPath: "hat.webp",
     type: SLIDE_TYPE.PRODUCT_GAME,
-    link: "/html/product.html?id=2",
+    link: "./html/product.html?id=2",
     productID: 2,
   },
   {
@@ -52,7 +52,7 @@ const carouselSlides = [
     description: "Coming Soon!!",
     imgPath: "kh4.webp",
     type: SLIDE_TYPE.PRODUCT_GAME,
-    link: "/html/product.html?id=14",
+    link: "./html/product.html?id=14",
     productID: 13,
   },
   {
@@ -127,7 +127,7 @@ function createCarouselSlide(indexInCarouselSlides) {
   const carouselSlideInfo = carouselSlides[indexInCarouselSlides];
   const product = productList[carouselSlideInfo.productID];
 
-  const imgPath = "/public/home/heroCarousel/" + carouselSlideInfo.imgPath;
+  const imgPath = "./public/home/heroCarousel/" + carouselSlideInfo.imgPath;
 
   const li = document.createElement("li");
   li.classList.add("carousel-slide");
