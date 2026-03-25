@@ -127,7 +127,7 @@ function createCarouselSlide(indexInCarouselSlides) {
   const carouselSlideInfo = carouselSlides[indexInCarouselSlides];
   const product = productList[carouselSlideInfo.productID];
 
-  const imgPath = "/public/home/heroCarousel/" + carouselSlideInfo.imgPath;
+  const imgPath = "./public/home/heroCarousel/" + carouselSlideInfo.imgPath;
 
   const li = document.createElement("li");
   li.classList.add("carousel-slide");
