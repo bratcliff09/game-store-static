@@ -7,7 +7,7 @@ export function createProductItem(productID) {
   const product = productList[productID];
 
   //Get main cover image
-  const publicPhotosPath = "../../public/product/";
+  const publicPhotosPath = "public/product/";
   let coverImage, path;
   if (product.images) {
     coverImage = product.images.main;
@@ -20,7 +20,7 @@ export function createProductItem(productID) {
   let finalPrice = getFinalPrice(product.price, product.sale);
   finalPrice = formatPrice(finalPrice);
 
-  let productPage = "../../html/product.html?id=" + product.id.toString();
+  let productPage = "html/product.html?id=" + product.id.toString();
 
   // Define DOM
   const li = document.createElement("li");

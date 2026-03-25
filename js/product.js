@@ -34,7 +34,7 @@ function redirectTo404() {
   if (debug) {
     throw new Error("404 Redirect simulation");
   }
-  window.location.replace("../html/404.html");
+  window.location.replace("html/404.html");
 }
 
 //#endregion
@@ -119,7 +119,7 @@ div_specificsLeft.children[2].children[1].innerText = date;
 removeSkeleton(div_specificsLeft.children[2].children[1]);
 //ESRB
 const div_esrb = document.querySelector("#esrb");
-div_esrb.children[0].innerHTML = `<img src="${"../public/esrb/" + product.esrb.rating.img}" />`;
+div_esrb.children[0].innerHTML = `<img src="${"public/esrb/" + product.esrb.rating.img}" />`;
 removeSkeleton(div_esrb.children[0]);
 div_esrb.children[1].innerHTML = "";
 for (const descriptor of product.esrb.content) {
@@ -136,7 +136,7 @@ removeSkeleton(div_gameDescription.children[1]);
 function createGoToCartBtn() {
   btn_cart.classList.replace("add-to-cart", "go-to-cart");
   btn_cart.innerText = "Go To Cart";
-  btn_cart.href = "../html/cartPage.html";
+  btn_cart.href = "html/cartPage.html";
 }
 
 function selectPlatform(evnt) {
@@ -158,7 +158,7 @@ const btn_carouselForward = document.querySelector(
 let carouselCurrPage = 0;
 
 //#region Carousel Initalization
-const rootPath = "../public/product/" + product.images.path + "/";
+const rootPath = "public/product/" + product.images.path + "/";
 const imgPathArr = [product.images.main].concat(product.images.carousel);
 
 ul_carouselMain.innerHTML = "";

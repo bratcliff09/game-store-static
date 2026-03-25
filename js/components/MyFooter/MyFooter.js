@@ -8,23 +8,23 @@ class MyFooter extends HTMLElement {
                 <p>Store</p>
                 <ul>
                     <li>
-                    <a href="/html/search.html?platform=ps5&platform=ps4"
+                    <a href="html/search.html?platform=ps5&platform=ps4"
                         >Playstation Games</a
                     >
                     </li>
-                    <li><a href="/html/search.html?platform=ns">Switch Games</a></li>
-                    <li><a href="/html/search.html?platform=ns">XBOX Games</a></li>
+                    <li><a href="html/search.html?platform=ns">Switch Games</a></li>
+                    <li><a href="html/search.html?platform=ns">XBOX Games</a></li>
 
-                    <li><a href="/html/search.html?platform=pc">PC Games</a></li>
+                    <li><a href="html/search.html?platform=pc">PC Games</a></li>
                 </ul>
             </div>
             <div class="col">
                 <p>Help</p>
                 <ul>
-                <li><a href="/html/404.html">Your Account</a></li>
-                <li><a href="/html/cartPage.html">Your Cart</a></li>
-                <li><a href="/html/404.html">Order Details</a></li>
-                <li><a href="/html/404.html">Help</a></li>
+                <li><a href="html/404.html">Your Account</a></li>
+                <li><a href="html/cartPage.html">Your Cart</a></li>
+                <li><a href="html/404.html">Order Details</a></li>
+                <li><a href="html/404.html">Help</a></li>
                 </ul>
             </div>
             <div class="col">
@@ -94,7 +94,7 @@ class MyFooter extends HTMLElement {
         </div>
         <div id="ft-row-2">
             <a href="#">
-                <img src="/public/store_icon.svg" alt="GameStore logo"/>
+                <img src="public/store_icon.svg" alt="GameStore logo"/>
             </a>
         </div>
     </footer>

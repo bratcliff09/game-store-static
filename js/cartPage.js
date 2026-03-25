@@ -21,7 +21,7 @@ function createListItem(
 ) {
   const product = productList[productID];
   const { main: mainImg, path: imgFolder } = product.images;
-  const imgPath = "../public/product/" + imgFolder + "/" + mainImg;
+  const imgPath = "public/product/" + imgFolder + "/" + mainImg;
 
   const li = document.createElement("li");
   li.classList.add("product-game");
@@ -31,7 +31,7 @@ function createListItem(
         <img src="${imgPath}" />
     </div>
     <div>
-        <a href="../html/product.html?id=${productID}" class="title">
+        <a href="html/product.html?id=${productID}" class="title">
             ${product.title}
         </a>
         <div class="platform">

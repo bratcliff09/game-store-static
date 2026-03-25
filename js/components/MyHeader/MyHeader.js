@@ -17,18 +17,18 @@ class MyHeader extends HTMLElement {
       <button id="mobile-menu-open" class="open material-symbols-outlined">
         menu
       </button>
-      <a href="/index.html" id="logo">
-        <img src="/public/store_icon.svg" alt="GameStore logo" />
+      <a href="index.html" id="logo">
+        <img src="public/store_icon.svg" alt="GameStore logo" />
       </a>
       <form id="search" >
         <input type="text" name="" id="" placeholder="Search" />
         <input type="submit" class="material-symbols-outlined" value="search" />
       </form>
       <div id="header-col-3">
-        <a href="/html/404.html" id="account" aria-label="Account" >
+        <a href="html/404.html" id="account" aria-label="Account" >
           <div class="material-symbols-outlined">account_circle</div>
         </a>
-        <a href="/html/cartPage.html" id="cart">
+        <a href="html/cartPage.html" id="cart">
           <div class="material-symbols-outlined">shopping_cart</div>
           <p>1</p>
         </a>
@@ -37,11 +37,11 @@ class MyHeader extends HTMLElement {
     <nav>
       <ul>
         <li>
-          <a href="/html/search.html?platform=ps5&platform=ps4">Playstation</a>
+          <a href="html/search.html?platform=ps5&platform=ps4">Playstation</a>
         </li>
-        <li><a href="/html/search.html?platform=ns">Switch</a></li>
-        <li><a href="/html/search.html?platform=xbox">XBOX</a></li>
-        <li><a href="/html/search.html?platform=pc">PC</a></li>
+        <li><a href="html/search.html?platform=ns">Switch</a></li>
+        <li><a href="html/search.html?platform=xbox">XBOX</a></li>
+        <li><a href="html/search.html?platform=pc">PC</a></li>
       </ul>
     </nav>
     <dialog closedby="any" id="mobile-nav-dialog">
@@ -53,9 +53,9 @@ class MyHeader extends HTMLElement {
           <section>
             <h2>Menu</h2>
             <ul>
-              <li><a href="/html/404.html">Account</a></li>
-              <li><a href="/html/404.html">Logout</a></li>
-              <li><a href="/html/cartPage.html">Cart</a></li>
+              <li><a href="html/404.html">Account</a></li>
+              <li><a href="html/404.html">Logout</a></li>
+              <li><a href="html/cartPage.html">Cart</a></li>
             </ul>
           </section>
           <section id="mobile-nav-shop-by-platform">
@@ -63,7 +63,7 @@ class MyHeader extends HTMLElement {
             <ul>
               <li>
                 <a
-                  href="/html/search.html?platform=ps5&platform=ps4"
+                  href="html/search.html?platform=ps5&platform=ps4"
                   aria-label="Show More Playstation"
                   role="button"
                 >
@@ -72,7 +72,7 @@ class MyHeader extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="/html/search.html?platform=ns"
+                  href="html/search.html?platform=ns"
                   aria-label="Show More Switch"
                   role="button"
                 >
@@ -81,7 +81,7 @@ class MyHeader extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="/html/search.html?platform=xbox"
+                  href="html/search.html?platform=xbox"
                   aria-label="Show More X-Box"
                   role="button"
                 >
@@ -90,7 +90,7 @@ class MyHeader extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="/html/search.html?platform=pc"
+                  href="html/search.html?platform=pc"
                   aria-label="Show More PC"
                   role="button"
                   >PC
@@ -147,7 +147,7 @@ class MyHeader extends HTMLElement {
     evnt.preventDefault();
 
     const searchQuery = this.#form_search.children[0].value;
-    window.location.href = "/html/search.html?q=" + searchQuery;
+    window.location.href = "html/search.html?q=" + searchQuery;
   }
 
   onMobileMenuOpen() {
